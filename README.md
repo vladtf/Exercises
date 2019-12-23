@@ -1,0 +1,2 @@
+# Exercises
+C# basic exercises

@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Problema_2
 {
     public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Pereche pereche = new Pereche();
 
             string s = "";
 
-            while (s!="n")
+            while (s != "n")
             {
                 Console.Write("x = ");
                 s = Console.ReadLine();
@@ -35,7 +31,6 @@ namespace Problema_2
                 }
                 catch (Exception e)
                 {
-
                     Console.WriteLine(e.Message);
                 }
             }

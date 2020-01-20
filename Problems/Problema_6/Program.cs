@@ -48,6 +48,7 @@ namespace Problema_6
             Console.WriteLine(res);
 
             Console.ReadLine();
+
         }
     }
 }

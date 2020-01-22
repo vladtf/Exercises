@@ -39,7 +39,7 @@ namespace Propblema_7
         //    Console.ReadLine();
         //}
 
-        static int f(int x, int y)
+        private static int f(int x, int y)
         {
             int r = x % y;
             while (r != 0)
@@ -50,6 +50,7 @@ namespace Propblema_7
             }
             return x;
         }
+
         private static void Main(string[] args)
         {
             string line = Console.ReadLine();

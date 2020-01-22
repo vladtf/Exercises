@@ -26,7 +26,7 @@ namespace Problema_6
 
             vec.AddRange(Array.ConvertAll(data, int.Parse));
 
-            long od = 0; 
+            long od = 0;
             long dv = 0;
 
             foreach (int x in vec)
@@ -48,7 +48,6 @@ namespace Problema_6
             Console.WriteLine(res);
 
             Console.ReadLine();
-
         }
     }
 }

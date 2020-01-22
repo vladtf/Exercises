@@ -5,7 +5,6 @@ namespace Problema_5
 {
     internal class Program
     {
-
         //Functia care verifica daca un numar este prim
         public static int Prim(int x)
         {
@@ -32,7 +31,7 @@ namespace Problema_5
                     sum = sum + x;
 
                     //Afiseaza suma curenta
-                    Console.WriteLine("Suma curenta este : "+sum);
+                    Console.WriteLine("Suma curenta este : " + sum);
                 }
             }
 
@@ -44,8 +43,7 @@ namespace Problema_5
         {
             int max = 0;
 
-
-            while(x>0)
+            while (x > 0)
             {
                 //Daca ultima cifra a numarului este mai mare decat maxim atunci il inlocuieste
                 if (x % 10 > max) max = x % 10;
@@ -99,14 +97,13 @@ namespace Problema_5
             //Afiseara numarului de numere prime
             Console.WriteLine("Numarul de intregi primi este : " + nr.ToString());
 
-
             //Afiseaza suma numerelor prim apeland metod Suma
             Console.WriteLine("Suma intregilor primi este : " + Suma(v));
 
             int sum = 0;
 
             //Insumeaza cifra maxima a fiecarui numar din lista
-            foreach (int  x in v)
+            foreach (int x in v)
             {
                 sum = sum + CifraMaxima(x);
             }

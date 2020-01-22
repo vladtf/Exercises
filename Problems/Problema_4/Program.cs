@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Problema_4
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             List<Word> words = new List<Word>();
 
@@ -16,13 +13,13 @@ namespace Problema_4
 
             word.Str = "";
 
-            while (word.Str!="n")
+            while (word.Str != "n")
             {
                 word = new Word();
                 Console.Write("Citeste sirul de caractere : ");
                 word.Citire();
 
-                if(word.Str!="n")
+                if (word.Str != "n")
                 {
                     words.Add(word);
                 }
@@ -37,7 +34,7 @@ namespace Problema_4
         }
     }
 
-    class Word
+    internal class Word
     {
         public string Str;
 

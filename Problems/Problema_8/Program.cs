@@ -4,9 +4,9 @@ namespace Problema_8
 {
     internal class Program
     {
-   //     N children are playing a game.They are split in two teams, RR of them are in the red team and N-RN−R are in the blue team.
+        //     N children are playing a game.They are split in two teams, RR of them are in the red team and N-RN−R are in the blue team.
 
-   //You also know that exactly KK of them will switch teams.Find the minimum and maximum possible number of children in the red team after they all switch teams.
+        //You also know that exactly KK of them will switch teams.Find the minimum and maximum possible number of children in the red team after they all switch teams.
         private static void Main(string[] args)
         {
             string line = Console.ReadLine();
@@ -32,7 +32,7 @@ namespace Problema_8
                 }
                 else
                 {
-                    while(i>0)
+                    while (i > 0)
                     {
                         r--; b++; i--;
                     }
@@ -62,7 +62,7 @@ namespace Problema_8
 
             min = r;
 
-            Console.WriteLine(min.ToString() +" "+ max.ToString());
+            Console.WriteLine(min.ToString() + " " + max.ToString());
 
             Console.ReadLine();
         }

@@ -10,12 +10,12 @@ namespace Problema_17
             string[] data = line.Split(' ');
 
             int n = Int32.Parse(data[0]);
-            int k = Int32.Parse(data[1]); 
+            int k = Int32.Parse(data[1]);
 
             line = Console.ReadLine();
             data = line.Split(' ');
 
-            int[] values = Array.ConvertAll(data,Int32.Parse);
+            int[] values = Array.ConvertAll(data, Int32.Parse);
 
             Array.Sort(values);
 
@@ -26,7 +26,7 @@ namespace Problema_17
                 minVol += values[i];
             }
 
-            if(minVol%100==0)
+            if (minVol % 100 == 0)
             {
                 Console.WriteLine(minVol / 100);
             }

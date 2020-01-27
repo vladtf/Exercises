@@ -36,8 +36,7 @@ namespace Problema_10
 
             var tasks = new List<Task<int>>();
 
-
-            for (int i = 1; i < lines.Length-1; i++)
+            for (int i = 1; i < lines.Length - 1; i++)
             {
                 var task = Task<int>.Run(() =>
                 {
@@ -52,7 +51,7 @@ namespace Problema_10
                 tasks.Add(task);
             }
 
-            var results =await Task.WhenAll(tasks);
+            var results = await Task.WhenAll(tasks);
 
             foreach (var item in results)
             {

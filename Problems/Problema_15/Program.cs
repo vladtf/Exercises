@@ -2,9 +2,9 @@
 
 namespace Problema_15
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string line = Console.ReadLine();
             string[] data = line.Split(' ');
@@ -27,7 +27,7 @@ namespace Problema_15
 
             for (int i = 1; i <= 1000; i++)
             {
-                if (vec[i]>=k)
+                if (vec[i] >= k)
                 {
                     ans++;
                 }

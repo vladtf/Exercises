@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Problema_11
 {
     internal class Program
     {
-
         private static void Main(string[] args)
         {
             int n = Int32.Parse(Console.ReadLine());
@@ -39,6 +37,7 @@ namespace Problema_11
 
             Console.WriteLine(rez.ToString());
         }
+
         //    private static void Main(string[] args)
         //    {
         //        int n = Int32.Parse(Console.ReadLine());

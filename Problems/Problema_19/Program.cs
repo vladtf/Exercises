@@ -11,8 +11,19 @@ namespace Problema_19
     //Compute the maximum number of Pokémon you can evolve.
     internal class Program
     {
+        private static Tuple<int, string, bool> GetValues()
+        {
+            return Tuple.Create<int, string, bool>(123, "Hello", false);
+        }
+
         private static void Main(string[] args)
         {
+            //var ret = GetValues();
+
+            //var item1 = ret.Item1;
+            //var item2 = ret.Item2;
+            //var item3 = ret.Item2;
+
             string line = Console.ReadLine();
             string[] data = line.Split(' ');
 

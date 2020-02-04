@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Problema_33
@@ -31,7 +32,7 @@ namespace Problema_33
                 }
             }
 
-            Console.WriteLine(freq.ToList().IndexOf(freq.ToList().OrderByDescending(x => x).First()));
+            Console.WriteLine(freq.ToList().FindIndex(x => x == freq.ToList().OrderByDescending(x => x).First()));
         }
 
     }

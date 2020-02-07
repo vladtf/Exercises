@@ -19,7 +19,7 @@ namespace Problema_41
             var init = new List<char>(reversed);
             reversed.Reverse();
 
-            bool ok = true;
+            bool ok = false;
             for (int i = 0; i < reversed.Count(); i++)
             {
                 if (init[i] != reversed[i])

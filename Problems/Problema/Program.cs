@@ -74,14 +74,23 @@ namespace Problema
             Str = str;
         }
 
-        public static bool Prime(int n)
+        public static bool Prime(object param)
         {
-            if (n < 2) return false;
-            if (n == 2) return true;
-            if (n % 2 == 0) return false;
-            for (int i = 3; i * i <= n; i += 2)
-                if (n % i == 0) return false;
-            return true;
+            try
+            {
+                int n = (int)param;
+                if (n < 2) return false;
+                if (n == 2) return true;
+                if (n % 2 == 0) return false;
+                for (int i = 3; i * i <= n; i += 2)
+                    if (n % i == 0) return false;
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw new ArgumentException("Invalid parameter");
+            }
         }
     }
 }

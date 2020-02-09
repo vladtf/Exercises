@@ -53,6 +53,7 @@ namespace Problema
                 }
             }
             Console.ReadLine();
+
         }
     }
 
@@ -68,7 +69,6 @@ namespace Problema
         public int B;
 
         public string Str;
-
         public void SetString(string str)
         {
             Str = str;

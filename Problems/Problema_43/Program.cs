@@ -10,6 +10,7 @@ namespace Problema_43
 //Memory limit: 258.5 MB
 
 //You are given an array AA of NN integers.An anomaly is a number for which the absolute difference between it and all the other numbers in the array is greater than KK.Find the number of anomalies.
+
         static void Main(string[] args)
         {
             var tokens = Console.ReadLine().Split(' ').Select(x => Int32.Parse(x)).ToList();

@@ -6,22 +6,27 @@ namespace Problema_44
 {
     internal class Program
     {
-//        Closest Pair
-//Time limit: 1220 ms
-//Memory limit: 130.5 MB
+        //        Closest Pair
+        //Time limit: 1220 ms
+        //Memory limit: 130.5 MB
 
-//Template
-//You should implement a function that takes as arguments two arrays of NN integers.Find a pair (a, b)(a, b) such that:
+        //Template
+        //You should implement a function that takes as arguments two arrays of NN integers.Find a pair (a, b)(a, b) such that:
 
-//aa is from the first array
-//bb is from the second array
-//|a-b|∣a−b∣ is minimum
-//Return the minimum possible value of |a-b|∣a−b∣.
+        //aa is from the first array
+        //bb is from the second array
+        //|a-b|∣a−b∣ is minimum
+        //Return the minimum possible value of |a-b|∣a−b∣.
         private static void Main(string[] args)
         {
             long n = Int64.Parse(Console.ReadLine());
             List<CustomInt> line1 = Console.ReadLine().Split(' ').Select(x => new CustomInt { value = Int64.Parse(x), Array = 1 }).ToList();
             List<CustomInt> line2 = Console.ReadLine().Split(' ').Select(x => new CustomInt { value = Int64.Parse(x), Array = 2 }).ToList();
+
+
+            //var ans = from a in line1
+            //          join b in line2 on a.value equals b.value
+            //          select new { a, b };
 
             line2.AddRange(line1);
 

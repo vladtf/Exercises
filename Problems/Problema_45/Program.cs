@@ -44,6 +44,8 @@ namespace Problema_45
                        from b in items
                        where a.l > b.l && a.r < b.r
                        select new { a.l, a.r }).ToList();
+
+
             var groups = ans.GroupBy(x => x).ToList();
             Console.WriteLine(groups.Count());
         }

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Task_6
 {
-    class Program
+    internal class Program
     {
         //        Three Equal
         //Time limit: 1220 ms
@@ -28,7 +28,8 @@ namespace Task_6
             }
             return 3 + to - from;
         }
-        static void Main(string[] args)
+
+        private static void Main(string[] args)
         {
             int n = Int32.Parse(Console.ReadLine());
 
